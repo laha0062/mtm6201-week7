@@ -7,3 +7,44 @@
 .dice:hover circle {
     transform: scale(1.1);
 }
+
+.dice5 g {
+    transition: all .3s;
+    transform-origin: 100px 100px;
+}
+
+.dice5:hover g {
+    transform: scale(1.2) rotate(1turn)
+}
+
+.patterntext {
+    font-size: 5.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cls-1{fill:#ffe269;}
+.cls-2{fill:#fff;}
+.cls-3{fill:#fcf0c0;}
+
+@keyframes move {
+    0% {
+        transform: translatex(0);
+    }
+
+    50% {
+        transform: translatex(10px);
+    }
+
+    100% {
+        transform: translatex(0);
+    }
+}
+
+.pupil {
+    animation: move 1s infinite;
+}
+
+.svg-wrap svg:hover .pupil {
+    animation-play-state: paused;
+}
