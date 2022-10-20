@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>Scalable Vector Graphic</h1>
+    <div class="container"></div>
+        <h1>Scalable Vector Graphic</h1>
+    <!--using a SVG file as an image-->
+        <img src="images/myfirst.svg" alt="graphic with a square">
+
+    <!--embedding SVG code in HTML-->
+        <svg class="dice" version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewbox="0 0 200 200">
+            <rect x="0" y="0" width="200" height="200" rx="8" ry="8" fill="#4DD0E1" />
+            <circle cx="50" cy="50" r="25" fill="#D50000" />
+        </svg>    
+    </div>
 </body>
 </html>
